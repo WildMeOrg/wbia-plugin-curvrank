@@ -1,7 +1,5 @@
-# ibeis_plugin_example
+# IBEIS Plugin Example
 An example of how to design and use a Python module as a plugin in the IBEIS IA system
-
-=====
 
 # Installation
 
@@ -14,13 +12,13 @@ python setup.py develop
 
 # REST API
 
-With the plugin installed, register the module name with the IBEISControl.py file
-in the ibeis repository located at ibeis/ibeis/control/IBEISControl.py.  Register
-the module by adding the string (for example, 'ibeis_plugin_example') to the
-list AUTOLOAD_PLUGIN_MODNAMES.
+With the plugin installed, register the module name with the `IBEISControl.py` file
+in the ibeis repository located at `ibeis/ibeis/control/IBEISControl.py`.  Register
+the module by adding the string (for example, `ibeis_plugin_example`) to the
+list `AUTOLOAD_PLUGIN_MODNAMES`.
 
 Then, load the web-based IBEIS IA service and open the URL that is registered with
-the @register_api decorator.
+the `@register_api decorator`.
 
 ```bash
 cd ~/code/ibeis/
@@ -29,7 +27,7 @@ python dev.py --web
 
 Navigate in a browser to http://127.0.0.1:5000/api/plugin/example/helloworld/ where
 this returns a formatted JSON response, including the serialized returned value
-from the ibeis_plugin_example_hello_world() function
+from the `ibeis_plugin_example_hello_world()` function
 
 ```
 {"status": {"cache": -1, "message": "", "code": 200, "success": true}, "response": "[ibeis_plugin_example] hello world with IBEIS controller <IBEISController(testdb1) at 0x11e776e90>"}
@@ -57,8 +55,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 The function from the plugin is automatically added as a method to the ibs object
-as ibs.ibeis_plugin_example_hello_world(), which is registered using the
-@register_ibs_method decorator.
+as `ibs.ibeis_plugin_example_hello_world()`, which is registered using the
+`@register_ibs_method decorator`.
 
 
 
