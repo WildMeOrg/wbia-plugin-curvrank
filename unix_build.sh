@@ -4,3 +4,4 @@ cp -v astar.so ../ibeis_curverank
 make -f MakefileDTW
 cp -v dtw.so ../ibeis_curverank
 cd ../
+pip install -e .
