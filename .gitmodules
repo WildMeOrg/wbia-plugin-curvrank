@@ -1,4 +1,4 @@
 [submodule "ibeis_curverank"]
-	path = ibeis_curverank
+	path = ibeis_curvrank
 	url = git@github.com:hjweide/dolphin-identification.git
 	branch = functional
