@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from __future__ import absolute_import, print_function, division
 import subprocess
+import sys
 import os
 try:
     from setuptools import setup
@@ -25,7 +26,7 @@ Programming Language :: Python :: 3.3
 Programming Language :: Python :: 3.4
 Topic :: Scientific/Engineering :: Bio-Informatics
 '''
-NAME                = 'IBEIS CurveRank Plugin'
+NAME                = 'ibeis_curverank'
 MAINTAINER          = 'Wildbook Org. | IBEIS IA'
 MAINTAINER_EMAIL    = 'info@wildme.org'
 DESCRIPTION         = 'A plugin wrapper for Hendrik Weideman\'s CurveRank module'
@@ -43,12 +44,25 @@ MICRO               = 0
 SUFFIX              = 'dev0'
 VERSION             = '%d.%d.%d.%s' % (MAJOR, MINOR, MICRO, SUFFIX)
 PACKAGES            = ['ibeis_curverank']
+REQUIREMENTS        = [
+    'annoy',
+    # 'cv2',
+    'h5py',
+    'lasagne',
+    'luigi',
+    'matplotlib',
+    'numpy',
+    'pandas',
+    'scipy',
+    'six',
+    'theano',
+    'tqdm',
+    'utool',
+]
 
 
 def git_version():
-    """
-    Return the sha1 of local git HEAD as a string.
-    """
+    """Return the sha1 of local git HEAD as a string."""
     def _minimal_ext_cmd(cmd):
         # construct minimal environment
         env = {}
@@ -105,6 +119,18 @@ full_version = '%%(version)s.%%(git_revision)s' %% {
 
 
 def do_setup():
+    try:
+        import cv2  # NOQA
+    except ImportError:
+        print('''
+OpenCV (cv2) required by this module.
+
+Install using source provided by https://github.com/opencv/opencv
+or
+pip install opencv-python
+''')
+        sys.exit(0)
+
     write_version_py()
     setup(
         name=NAME,
@@ -118,6 +144,7 @@ def do_setup():
         license=LICENSE,
         platforms=PLATFORMS,
         packages=PACKAGES,
+        install_requires=REQUIREMENTS,
         keywords=CLASSIFIERS.replace('\n', ' ').strip(),
     )
 
