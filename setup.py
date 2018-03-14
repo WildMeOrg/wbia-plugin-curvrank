@@ -26,12 +26,12 @@ Programming Language :: Python :: 3.3
 Programming Language :: Python :: 3.4
 Topic :: Scientific/Engineering :: Bio-Informatics
 '''
-NAME                = 'ibeis_curverank'
+NAME                = 'ibeis_curvrank'
 MAINTAINER          = 'Wildbook Org. | IBEIS IA'
 MAINTAINER_EMAIL    = 'info@wildme.org'
-DESCRIPTION         = 'A plugin wrapper for Hendrik Weideman\'s CurveRank module'
+DESCRIPTION         = 'A plugin wrapper for Hendrik Weideman\'s curvrank module'
 LONG_DESCRIPTION    = DESCRIPTION
-KEYWORDS            = ['ibeis', 'plugin', 'wildbook', 'ia', 'curverank']
+KEYWORDS            = ['ibeis', 'plugin', 'wildbook', 'ia', 'curvrank']
 URL                 = 'https://github.com/WildbookOrg/'
 DOWNLOAD_URL        = ''
 LICENSE             = 'Apache'
@@ -43,7 +43,7 @@ MINOR               = 1
 MICRO               = 0
 SUFFIX              = 'dev0'
 VERSION             = '%d.%d.%d.%s' % (MAJOR, MINOR, MICRO, SUFFIX)
-PACKAGES            = ['ibeis_curverank']
+PACKAGES            = ['ibeis_curvrank']
 REQUIREMENTS        = [
     'annoy',
     # 'cv2',
@@ -88,7 +88,7 @@ def git_version():
     return git_revision
 
 
-def write_version_py(filename=os.path.join('ibeis_curverank', 'version.py')):
+def write_version_py(filename=os.path.join('ibeis_curvrank', 'version.py')):
     cnt = '''
 # THIS FILE IS GENERATED FROM SETUP.PY
 version = '%(version)s'
