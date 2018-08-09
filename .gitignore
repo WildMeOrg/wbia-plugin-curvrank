@@ -2,6 +2,8 @@
 
 *.egg-info/
 *.pyc
+*.so
+*.dylib
 
 build/
 _output/
