@@ -10,3 +10,6 @@ _output/
 
 failed_doctests.txt
 timeings.txt
+
+_page/
+_doc/_build/
