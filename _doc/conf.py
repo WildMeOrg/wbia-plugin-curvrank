@@ -21,16 +21,6 @@ modindex_common_prefix = ['_']
 # full list see the documentation:
 # http://www.sphinx-doc.org/en/stable/config
 
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os  # NOQA
-# import sys  # NOQA
-# sys.path.insert(0, '/Users/jason.parham/code/ibeis-curvrank-module/ibeis_curvrank')
-
 master_doc = 'index'
 
 html_theme = "sphinx_rtd_theme"
