@@ -2,6 +2,14 @@
 
 *.egg-info/
 *.pyc
+*.so
+*.dylib
 
 build/
 _output/
+
+failed_doctests.txt
+timeings.txt
+
+_page/
+_doc/_build/

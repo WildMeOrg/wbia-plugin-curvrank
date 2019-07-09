@@ -88,15 +88,13 @@ def git_version():
     return git_revision
 
 
-def write_version_py(filename=os.path.join('ibeis_curvrank', 'version.py')):
-    cnt = '''
-# THIS FILE IS GENERATED FROM SETUP.PY
-version = '%(version)s'
-git_revision = '%(git_revision)s'
-full_version = '%%(version)s.%%(git_revision)s' %% {
-    'version': version,
-    'git_revision': git_revision,
-}
+def write_version_py(filename=os.path.join('ibeis_curvrank', '__init__.py')):
+    cnt = '''# THIS FILE IS GENERATED FROM SETUP.PY
+from ibeis_curvrank import _plugin  # NOQA
+
+__version__      = '%(version)s'
+__version_git__  = '%(git_revision)s'
+__version_full__ = '%%s.%%s' %% (__version__, __version_git__, )
 '''
     FULL_VERSION = VERSION
     if os.path.isdir('.git'):
