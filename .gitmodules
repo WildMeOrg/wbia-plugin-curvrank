@@ -1,4 +1,4 @@
-[submodule "ibeis_curverank"]
-	path = ibeis_curvrank
-	url = https://github.com/WildbookOrg/ibeis_curvrank.git
+[submodule "wbia_curverank"]
+	path = wbia_curvrank
+	url = https://github.com/WildbookOrg/wbia-tpl-curvrank.git
 	branch = master
