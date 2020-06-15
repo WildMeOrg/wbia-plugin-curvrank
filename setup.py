@@ -57,7 +57,7 @@ REQUIREMENTS        = [
     'six',
     'theano',
     'tqdm',
-    'utool',
+    'wbia-utool',
 ]
 
 
