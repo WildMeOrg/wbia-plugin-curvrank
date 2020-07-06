@@ -1,0 +1,13 @@
+annoy
+# cv2
+h5py
+lasagne
+luigi
+matplotlib
+numpy
+pandas
+scipy
+six
+theano
+tqdm
+wbia-utool
