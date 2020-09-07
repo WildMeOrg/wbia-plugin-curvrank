@@ -1,7 +1,7 @@
 annoy
 # cv2
 h5py
-lasagne
+# lasagne # use the one embedded in wbia-cnn
 luigi
 matplotlib
 numpy
@@ -10,4 +10,5 @@ scipy
 six
 theano
 tqdm
+wbia-cnn
 wbia-utool
