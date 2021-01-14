@@ -1,4 +1,4 @@
 [submodule "wbia_curverank"]
-	path = wbia_curvrank
+	path = wbia_curvrank_v2
 	url = https://github.com/WildbookOrg/wbia-tpl-curvrank-v2.git
 	branch = develop
