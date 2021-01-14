@@ -27,7 +27,7 @@ Programming Language :: Python :: 3.3
 Programming Language :: Python :: 3.4
 Topic :: Scientific/Engineering :: Bio-Informatics
 """
-NAME = 'wbia_curvrank'
+NAME = 'wbia_curvrank_v2'
 MAINTAINER = 'Wildbook Org. | IBEIS IA'
 MAINTAINER_EMAIL = 'info@wildme.org'
 DESCRIPTION = "A plugin wrapper for Hendrik Weideman's curvrank module"
@@ -44,7 +44,7 @@ MINOR = 1
 MICRO = 0
 SUFFIX = 'dev0'
 VERSION = '%d.%d.%d.%s' % (MAJOR, MINOR, MICRO, SUFFIX)
-PACKAGES = ['wbia_curvrank']
+PACKAGES = ['wbia_curvrank_v2']
 
 
 def git_version():
@@ -72,9 +72,9 @@ def git_version():
     return git_revision
 
 
-def write_version_py(filename=os.path.join('wbia_curvrank', '__init__.py')):
+def write_version_py(filename=os.path.join('wbia_curvrank_v2', '__init__.py')):
     cnt = """# THIS FILE IS GENERATED FROM SETUP.PY
-from wbia_curvrank import _plugin  # NOQA
+from wbia_curvrank_v2 import _plugin  # NOQA
 
 __version__      = '%(version)s'
 __version_git__  = '%(git_revision)s'

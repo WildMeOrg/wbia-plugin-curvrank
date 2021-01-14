@@ -1,21 +1,21 @@
-ibeis\_curvrank package
+wbia\_curvrank\_v2 package
 =======================
 
 Submodules
 ----------
 
-ibeis\_curvrank.\_plugin module
+wbia\_curvrank\_v2.\_plugin module
 -------------------------------
 
-.. automodule:: ibeis_curvrank._plugin
+.. automodule:: wbia_curvrank_v2._plugin
     :members:
     :undoc-members:
     :show-inheritance:
 
-ibeis\_curvrank.\_plugin\_depc module
+wbia\_curvrank\_v2.\_plugin\_depc module
 -------------------------------------
 
-.. automodule:: ibeis_curvrank._plugin_depc
+.. automodule:: wbia_curvrank_v2._plugin_depc
     :members:
     :undoc-members:
     :show-inheritance:
@@ -24,7 +24,7 @@ ibeis\_curvrank.\_plugin\_depc module
 Module contents
 ---------------
 
-.. automodule:: ibeis_curvrank
+.. automodule:: wbia_curvrank_v2
     :members:
     :undoc-members:
     :show-inheritance:

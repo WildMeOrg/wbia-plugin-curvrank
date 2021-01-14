@@ -31,7 +31,7 @@ html_theme_path = [
 
 # -- Project information -----------------------------------------------------
 
-project = 'ibeis_curvrank'
+project = 'wbia_curvrank_v2'
 copyright = '2018, Wild Me'
 author = 'Jason Parham, Drew Blount'
 

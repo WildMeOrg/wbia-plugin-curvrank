@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = ibeis_curvrank
+SPHINXPROJ    = ibeis_curvrank_v2
 SOURCEDIR     = .
 BUILDDIR      = _build
 

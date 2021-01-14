@@ -22,6 +22,6 @@ list `AUTOLOAD_PLUGIN_MODNAMES`.
 # Example
 ```
 $ python
->>> import wbia_curvrank
->>> wbia_curvrank._plugin.wbia_plugin_curvrank_example(None)
+>>> import wbia_curvrank_v2
+>>> wbia_curvrank_v2._plugin.wbia_plugin_curvrank_v2_example(None)
 ```
