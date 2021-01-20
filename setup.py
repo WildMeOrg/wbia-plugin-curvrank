@@ -3,11 +3,14 @@
 import subprocess
 import sys
 import os
+from Cython.Build import cythonize
 
 try:
     from setuptools import setup
+    from setuptools import Extension
 except ImportError:
     from distutils.core import setup
+    from distutils.extension import Extension
 
 
 CLASSIFIERS = """
@@ -105,6 +108,14 @@ def do_setup():
         'build': parse_requirements('requirements/build.txt'),
     }
 
+    ext_modules = [
+        Extension(
+            "wbia_curvrank_v2.stitch",
+            sources=["wbia_curvrank_v2/stitch.pyx"],
+            libraries=["m"]  # Unix-like specific
+        )
+    ]
+
     write_version_py()
     setup(
         name=NAME,
@@ -121,6 +132,7 @@ def do_setup():
         install_requires=install_requires,
         extras_require=extras_require,
         keywords=CLASSIFIERS.replace('\n', ' ').strip(),
+        ext_modules=cythonize(ext_modules),
     )
 
 

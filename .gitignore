@@ -13,3 +13,5 @@ timeings.txt
 
 _page/
 _doc/_build/
+
+_weights/curvrank.v2.*
