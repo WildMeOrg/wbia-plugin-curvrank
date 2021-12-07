@@ -110,9 +110,9 @@ def do_setup():
 
     ext_modules = [
         Extension(
-            "wbia_curvrank_v2.stitch",
-            sources=["wbia_curvrank_v2/stitch.pyx"],
-            libraries=["m"]  # Unix-like specific
+            'wbia_curvrank_v2.stitch',
+            sources=['wbia_curvrank_v2/stitch.pyx'],
+            libraries=['m'],  # Unix-like specific
         )
     ]
 
