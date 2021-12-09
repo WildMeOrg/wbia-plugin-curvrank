@@ -12,3 +12,4 @@ theano
 tqdm
 wbia-cnn
 wbia-utool
+pyastar2d
