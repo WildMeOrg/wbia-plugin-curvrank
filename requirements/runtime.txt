@@ -6,10 +6,10 @@ luigi
 matplotlib
 numpy
 pandas
+pyastar2d
 scipy
 six
 theano
 tqdm
 wbia-cnn
 wbia-utool
-pyastar2d
