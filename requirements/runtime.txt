@@ -6,7 +6,7 @@ luigi
 matplotlib
 numpy
 pandas
-pyastar2d
+pyastar2d==1.0.4
 scipy
 six
 theano
